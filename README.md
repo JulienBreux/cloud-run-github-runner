@@ -14,7 +14,7 @@ Create the secret:
 
 > [!IMPORTANT]
 > Change the values of `GITHUB_SECRET_VALUE`.
-> See [How to get a Github register token]
+> See [How to get a Github register token](#how-to-get-a-github-register-token)
 
 ```sh
 gcloud secrets create GH_TOKEN --replication-policy="automatic"
@@ -82,6 +82,15 @@ docker run \
 
 > [!NOTE]
 > In this case `cloud-run-github-runner` is the name of the Cloud Run Worker pool.
+
+### How to get a Github register token
+
+Very simple, go to "Add new self-hosted runner" in settings section of your repository.
+For example: https://github.com/JulienBreux/cloud-run-github-runner/settings/actions/runners/new
+
+![example of hosted runner form](docs/assets/add-new-self-hosted-runner.png)
+
+Copy the *register token*.
 
 ## Security
 

@@ -1,0 +1,8 @@
+docs/assets
+.editorconfig
+.gitignore
+CHANGELOG.md
+CODEOWNERS
+CONTRIBUTING.md
+LICENSE
+README.md
